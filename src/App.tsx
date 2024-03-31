@@ -1,15 +1,20 @@
-import { View, Text, StatusBar } from 'react-native'
 import React from 'react'
-import Home from './screens/Home'
-import { Colors } from './theme/Colors'
+import HomeScreen from './screens/HomeScreen'
 import { NavigationContainer } from '@react-navigation/native'
-import TopTabsNavigator from './navigation/TopTabsNavigator'
-import Header from './components/Header'
+import { createStackNavigator } from '@react-navigation/stack'
+import ChatScreen from './screens/ChatScreen';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
       <NavigationContainer>
-        <Home />
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }}>
+          <Stack.Screen name='HomeScreen' component={HomeScreen} />
+          <Stack.Screen name='ChatScreen' component={ChatScreen} />
+        </Stack.Navigator>
       </NavigationContainer>
   )
 }

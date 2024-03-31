@@ -1,5 +1,5 @@
 import CallList from "../screens/CallList";
-import ChatList from "../screens/ChatList";
+import ChatList from "../screens/ChatListScreen";
 import StatusList from "../screens/StatusList";
 
 export const TabBarData = [

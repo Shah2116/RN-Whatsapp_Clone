@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import TopTabsNavigator from '../navigation/TopTabsNavigator'
 import { Colors } from '../theme/Colors'
 
-const Home = () => {
+const HomeScreen = () => {
   return (
     <>
     <StatusBar backgroundColor={Colors.primaryColor}/>
@@ -14,6 +14,6 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomeScreen
 
 const styles = StyleSheet.create({})
