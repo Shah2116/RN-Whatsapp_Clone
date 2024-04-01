@@ -1,22 +1,22 @@
-import CallList from "../screens/CallList";
-import ChatList from "../screens/ChatListScreen";
-import StatusList from "../screens/StatusList";
+import CallListScreen from "../screens/CallListScreen";
+import ChatListScreen from "../screens/ChatListScreen";
+import StatusListScreen from "../screens/StatusListScreen";
 
 export const TabBarData = [
     {
         id: 1,
         name: 'Chats',
-        route: ChatList,
+        route: ChatListScreen,
     },
     {
         id: 2,
-        route: StatusList,
         name: 'Status',
+        route: StatusListScreen,
         
     },
     {
         id: 3,
         name: 'Calls',
-        route: CallList,
+        route: CallListScreen,
     }
 ]

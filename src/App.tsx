@@ -8,11 +8,11 @@ const Stack = createStackNavigator();
 
 const App = () => {
   return (
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{
+      <NavigationContainer >
+        <Stack.Navigator initialRouteName='ChatListScreen' screenOptions={{
           headerShown: false
         }}>
-          <Stack.Screen name='HomeScreen' component={HomeScreen} />
+          <Stack.Screen  name='HomeScreen' component={HomeScreen} />
           <Stack.Screen name='ChatScreen' component={ChatScreen} />
         </Stack.Navigator>
       </NavigationContainer>

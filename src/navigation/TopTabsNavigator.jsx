@@ -10,14 +10,14 @@ const TopTab = createMaterialTopTabNavigator();
 
 const TopTabsNavigator = () => {
   return (
-    <TopTab.Navigator  screenOptions={{
+    <TopTab.Navigator initialRouteName='Chats' screenOptions={{
      tabBarStyle:{backgroundColor:Colors.primaryColor},
      tabBarActiveTintColor: Colors.tertiary,
      tabBarInactiveTintColor: Colors.secondaryColor,
      tabBarIndicatorStyle: {backgroundColor:Colors.tertiary,height:3}
 
     }}>
-        <TopTab.Screen name='Community' component={Community} 
+        <TopTab.Screen  name='Community' component={Community} 
           options={{
             tabBarShowLabel: false,
             tabBarIcon: ({color}) => (

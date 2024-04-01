@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const CallList = () => {
+const StatusListScreen = () => {
   return (
     <View>
-      <Text>CallList</Text>
+      <Text>StatusList</Text>
     </View>
   )
 }
 
-export default CallList
+export default StatusListScreen
 
 const styles = StyleSheet.create({})
