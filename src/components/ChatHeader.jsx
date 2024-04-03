@@ -3,8 +3,11 @@ import React from 'react'
 import VectorIcon from '../utils/VectorIcons'
 import { Colors } from '../theme/Colors'
 import ProfilePic from '../assets/images/user1.jpeg'
+import { useNavigation } from '@react-navigation/native'
+
 
 const ChatHeader = () => {
+  const naviagtion = useNavigation()
   return (
     <View style={styles.container} >
       <View style={styles.leftContainer}>
@@ -13,6 +16,7 @@ const ChatHeader = () => {
           name='arrowleft'
           size={22}
           color={Colors.white}
+          // onPress={naviagtion.goBack()}
         />
       <Image source={ProfilePic} style={styles.profilePic}/>
       <Text style={styles.username}>Sam</Text>
